@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registratiopn Form</title>
+</head>
+<body>
+
+    <h1>Student REgistartion Form</h1>
+    <form action="submit.php" method="post">
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" placeholder="Enter your name" required>
+        <br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="you@example.com" required>
+        <br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="pass" required>
+        <br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" min="5" max="100">
+        <br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="number" name="age" min="5" max="100">
+        <br><br>
+
+        <p>Gender:</p>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> other
+        <br><br>
+
+        <label>City:</label><br>
+        <select name="city">
+            <option value="dhaka">Dhaka</option>
+            <option value="rajshahi">Rajshahi</option>
+            <option value="khulna">Khulna</option>
+            <option value="sylhet">Sylhet</option>
+        </select>
+        <br><br>
+
+        <p>Hobbies:</p>
+        <input type="checkbox" name="hobby" value="reading"> Reading
+        <input type="checkbox" name="hobby" value="cricket"> Cricket
+        <input type="checkbox" name="hobby" value="music"> Music
+        <br><br>
+
+        <label>About Yourself:</label><br>
+        <textarea name="about" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+        </form>
+
+</body>
+</html>
