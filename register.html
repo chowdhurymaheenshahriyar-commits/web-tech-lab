@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Registration Page</title>
+ <meta charset="UTF-8">
+ <title>Register | EventHub</title>
+ <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <h2>Register</h2>
-    
-    <form>
-        <label>Full Name:</label><br>
-        <input type="text" placeholder="Enter Full Name"><br><br>
-        
-        <label>Email:</label><br>
-        <input type="email" placeholder="Enter Email"><br><br>
-        
-        <label>Password:</label><br>
-        <input type="password" placeholder="Create Password"><br><br>
-        
-        <button type="submit">Register</button>
-    </form>
-
+<body class="auth">
+ <div class="brand">EventHub</div>
+ <div class="container">
+ <h2>Create Account</h2>
+ <form id="registerForm" novalidate>
+ <div class="form-group">
+ <label for="name">Full Name</label>
+ <input type="text" id="name" placeholder="Enter your name">
+ <span class="error" id="nameError"></span>
+ </div>
+ <div class="form-group">
+ <label for="email">Email</label>
+ <input type="text" id="email" placeholder="Enter your email">
+ <span class="error" id="emailError"></span>
+ </div>
+ <div class="form-group">
+ <label for="mobile">Mobile Number</label>
+ <input type="text" id="mobile" placeholder="01XXXXXXXXX">
+ <span class="error" id="mobileError"></span>
+ </div>
+ <div class="form-group">
+ <label for="password">Password</label>
+ <input type="password" id="password" placeholder="Enter your password">
+ <span class="error" id="passwordError"></span>
+ </div>
+ <div class="form-group">
+ <label for="confirm">Confirm Password</label>
+ <input type="password" id="confirm" placeholder="Re-enter your password">
+ <span class="error" id="confirmError"></span>
+ </div>
+ <div class="form-group">
+ <label>Register As</label>
+ <div class="options">
+ <label><input type="radio" name="role" value="Attendee"> Attendee</label>
+ <label><input type="radio" name="role" value="Organizer"> Organizer</label>
+ </div>
+ <span class="error" id="roleError"></span>
+ </div>
+ <div class="form-group">
+ <label class="check-label"><input type="checkbox" id="terms"> I agree to the terms and conditions</label>
+ <span class="error" id="termsError"></span>
+ </div>
+ <button type="submit">Register</button>
+ </form>
+ <p id="result"></p>
+ <div class="links">
+ Already have an account? <a href="login.html">Login</a>
+ </div>
+ </div>
+ <script src="register.js"></script>
 </body>
 </html>

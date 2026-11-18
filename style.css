@@ -1,0 +1,200 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f6f9;
+ margin: 0;
+}
+
+/* ---------- Login / Register / Forgot / Reset pages ---------- */
+body.auth {
+ background-color: #1e3a6d;
+ padding: 20px;
+}
+
+.brand {
+ text-align: center;
+ color: white;
+ font-size: 32px;
+ font-weight: bold;
+ margin: 20px 0;
+}
+
+.container {
+ max-width: 420px;
+ margin: 0 auto 30px auto;
+ background-color: #ffffff;
+ padding: 25px;
+ border-radius: 8px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+ color: #1e3a6d;
+ margin-top: 0;
+}
+
+.form-group {
+ margin-bottom: 15px;
+}
+
+label {
+ display: block;
+ font-weight: bold;
+ margin-bottom: 5px;
+}
+
+.options label {
+ display: inline-block;
+ font-weight: normal;
+ margin-right: 12px;
+}
+
+.check-label {
+ font-weight: normal;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select,
+textarea {
+ width: 100%;
+ padding: 8px;
+ border: 2px solid #ccc;
+ border-radius: 4px;
+ font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+ outline: 2px solid #1e3a6d;
+}
+
+/* Error text and border classes used by JavaScript */
+.error {
+ display: block;
+ color: red;
+ font-size: 13px;
+ margin-top: 4px;
+}
+
+.errorBorder {
+ border-color: red !important;
+}
+
+.successBorder {
+ border-color: green !important;
+}
+
+button {
+ width: 100%;
+ padding: 10px;
+ background-color: #1e3a6d;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ font-size: 16px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+button:hover {
+ background-color: #14284d;
+}
+
+#result {
+ text-align: center;
+ color: green;
+ font-weight: bold;
+}
+
+.links {
+ text-align: center;
+ margin-top: 15px;
+ font-size: 14px;
+}
+
+.links a {
+ color: #1e3a6d;
+}
+
+/* ---------- Profile page (same layout as Admin Dashboard) ---------- */
+.layout {
+ display: flex;
+}
+
+.sidebar {
+ width: 250px;
+ min-height: 100vh;
+ background-color: #1e3a6d;
+ padding: 20px;
+}
+
+.sidebar h2 {
+ color: white;
+ font-size: 24px;
+ margin-bottom: 30px;
+}
+
+.sidebar a {
+ display: block;
+ color: white;
+ text-decoration: none;
+ padding: 12px 10px;
+}
+
+.sidebar a:hover {
+ background-color: #2b4f8f;
+}
+
+.main {
+ flex: 1;
+ padding: 30px;
+}
+
+.main h1 {
+ color: #1e3a6d;
+}
+
+.cards {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+}
+
+.cards .container {
+ flex: 1;
+ min-width: 300px;
+ margin: 0;
+}
+
+.avatar {
+ width: 110px;
+ height: 110px;
+ border-radius: 50%;
+ background-color: #1e3a6d;
+ background-size: cover;
+ background-position: center;
+ color: white;
+ font-size: 44px;
+ line-height: 110px;
+ text-align: center;
+ margin: 0 auto 15px auto;
+}
+
+.info p {
+ margin: 8px 0;
+}
+
+/* Light grey "Select" text before a choice is made */
+select:invalid {
+ color: #888;
+}
+
+select option {
+ color: black;
+}

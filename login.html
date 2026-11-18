@@ -1,21 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login Page</title>
+ <meta charset="UTF-8">
+ <title>Login | EventHub</title>
+ <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <h2>Login</h2>
-    
-    <form>
-        <label>Username:</label><br>
-        <input type="text" placeholder="Enter Username"><br><br>
-        
-        <label>Password:</label><br>
-        <input type="password" placeholder="Enter Password"><br><br>
-        
-        <button type="submit">Login</button>
-    </form>
-
+<body class="auth">
+ <div class="brand">EventHub</div>
+ <div class="container">
+ <h2>Login</h2>
+ <form id="loginForm" novalidate>
+ <div class="form-group">
+ <label for="email">Email</label>
+ <input type="text" id="email" placeholder="Enter your email">
+ <span class="error" id="emailError"></span>
+ </div>
+ <div class="form-group">
+ <label for="password">Password</label>
+ <input type="password" id="password" placeholder="Enter your password">
+ <span class="error" id="passwordError"></span>
+ </div>
+ <div class="form-group">
+ <label for="role">Login As</label>
+ <select id="role" required>
+ <option value="" disabled selected hidden>Select</option>
+ <option value="Admin">Admin</option>
+ <option value="Organizer">Organizer</option>
+ <option value="Attendee">Attendee</option>
+</select>
+ <span class="error" id="roleError"></span>
+ </div>
+ <button type="submit">Login</button>
+ </form>
+ <p id="result"></p>
+ <div class="links">
+ <a href="forgot-password.html">Forgot password?</a><br><br>
+ New to EventHub? <a href="register.html">Create an account</a>
+ </div>
+ </div>
+ <script src="login.js"></script>
 </body>
 </html>

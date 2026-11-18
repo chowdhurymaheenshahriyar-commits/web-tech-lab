@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>My Profile | EventHub</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="layout">
+
+ <div class="sidebar">
+ <h2>EventHub</h2>
+ <a href="#">Dashboard</a>
+ <a href="profile.html">My Profile</a>
+ <a href="login.html">Logout</a>
+ </div>
+
+ <div class="main">
+ <h1>My Profile</h1>
+
+ <div class="cards">
+
+ <!-- View profile -->
+ <div class="container">
+ <div class="avatar" id="avatar">R</div>
+ <div class="info">
+ <p><b>Name:</b> <span id="viewName">Rahim Uddin</span></p>
+ <p><b>Email:</b> <span id="viewEmail">rahim@gmail.com</span></p>
+ <p><b>Mobile:</b> <span id="viewMobile">01712345678</span></p>
+ <p><b>Role:</b> Attendee</p>
+ <p><b>Bio:</b> <span id="viewBio">I love going to music events.</span></p>
+ </div>
+ </div>
+
+ <!-- Edit profile -->
+ <div class="container">
+ <h2>Edit Profile</h2>
+ <form id="profileForm" novalidate>
+ <div class="form-group">
+ <label for="picture">Profile Picture</label>
+ <input type="file" id="picture">
+ <span class="error" id="pictureError"></span>
+ </div>
+ <div class="form-group">
+ <label for="name">Full Name</label>
+ <input type="text" id="name" value="Rahim Uddin">
+ <span class="error" id="nameError"></span>
+ </div>
+ <div class="form-group">
+ <label for="email">Email</label>
+ <input type="text" id="email" value="rahim@gmail.com">
+ <span class="error" id="emailError"></span>
+ </div>
+ <div class="form-group">
+ <label for="mobile">Mobile Number</label>
+ <input type="text" id="mobile" value="01712345678">
+ <span class="error" id="mobileError"></span>
+ </div>
+ <div class="form-group">
+ <label for="bio">Bio</label>
+ <textarea id="bio" rows="3">I love going to music events.</textarea>
+ <span class="error" id="bioError"></span>
+ </div>
+ <button type="submit">Save Changes</button>
+ </form>
+ <p id="result"></p>
+ </div>
+
+ </div>
+ </div>
+
+ </div>
+ <script src="profile.js"></script>
+</body>
+</html>
